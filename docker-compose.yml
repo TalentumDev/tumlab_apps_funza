@@ -1,0 +1,17 @@
+services:
+  app:
+    container_name: tumlab-apps-frontend-sai
+    image: bilinguismotalentum/tumlab-apps:1.3.0-funza
+    restart: always
+    ports:
+      - "80:3000"
+    environment:
+      - AUTH_TRUST_HOST=http://tumlab.local
+      - NEXTAUTH_URL=http://tumlab.local
+      - NEXT_PUBLIC_API_URL=http://tumlab.local:5010
+      - AUTH_SECRET=rzGLlMLlm5HSIWymkcuzclsNQanqad1a198f3aoTUkA=
+      - DOCKER_API=http://tumlab.local:2375
+      - EXPIRE_SESSION=3600
+      - NEXT_PUBLIC_BLOCKED_CONTAINER=/tumlab_api
+    extra_hosts:
+      - "tumlab.local:host-gateway"

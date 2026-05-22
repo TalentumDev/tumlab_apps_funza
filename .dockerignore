@@ -1,0 +1,16 @@
+node_modules
+npm-debug.log
+.DS_Store
+.next
+.next/cache
+.next/static
+out
+.env
+.env.local
+.env.development
+.env.production
+*.log
+.idea/
+.vscode/
+dist/
+coverage/
