@@ -1,6 +1,6 @@
 services:
   app:
-    container_name: tumlab-apps-frontend-sai
+    container_name: tumlab-apps-funza
     image: bilinguismotalentum/tumlab-apps:1.3.0-funza
     restart: always
     ports:
